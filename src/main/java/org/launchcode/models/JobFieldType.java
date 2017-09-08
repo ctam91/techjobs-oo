@@ -5,6 +5,7 @@ package org.launchcode.models;
  */
 public enum JobFieldType {
 
+    // Create constants and their instantiated names (using a Constructor)
     EMPLOYER ("Employer"),
     LOCATION ("Location"),
     CORE_COMPETENCY ("Skill"),

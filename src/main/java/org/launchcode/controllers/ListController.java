@@ -35,7 +35,7 @@ public class ListController {
             return "redirect:/list/all";
         }
 
-
+        // ArrayList of any object instances that extend JobField
         ArrayList<? extends JobField> items;
 
         switch(column) {
