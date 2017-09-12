@@ -37,3 +37,10 @@ ul.form-group li {
     display: inline-block;
     padding-right: 15px;
 }
+
+
+.error{
+    font-style: italic;
+    color: red;
+}
+
