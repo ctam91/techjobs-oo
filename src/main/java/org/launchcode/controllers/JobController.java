@@ -57,9 +57,11 @@ public class JobController {
                 Employer theEmployer = employer;
                 Job newJob = new Job(jobForm.getName(),theEmployer,jobForm.getLocation(), jobForm.getPositionType(),jobForm.getCoreCompetency());
                 jobData.add(newJob);
+                int id = newJob.getId();
                 model.addAttribute("job", newJob);
+                return "redirect:/job?id=" + id;
             }
         }
-        return "job-detail";
+        return "";
     }
 }
