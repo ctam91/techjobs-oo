@@ -117,4 +117,13 @@ public class JobData {
     public JobFieldData<PositionType> getPositionTypes() {
         return positionTypes;
     }
+
+    public Employer findEmployerById(int id) {
+        ArrayList<Employer> employers = this.getEmployers().findAll();
+        for (Employer employer : employers) {
+            if (employer.getId() == id) {
+                return employer;
+            }
+        }   return null;
+    }
 }
